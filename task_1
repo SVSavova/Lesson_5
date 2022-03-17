@@ -1,0 +1,23 @@
+/*
+1. Напишете програма Distance, която изчислява разстоянието от
+точка (x,y) до (0,0) по формулата:result = Math.sqrt((x*x + y*y))
+ */
+
+import java.util.Scanner;
+
+public class Distance {
+    public static void main(String[] args) {
+
+        double z = 57.9876;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Въведете x:");
+        double x = scanner.nextDouble();
+        System.out.println("Въведете y:");
+        double y = scanner.nextDouble();
+        double result = Math.sqrt((x*x) +(y*y));
+        System.out.println("Разстоянието е: "+ result);
+        System.out.println("Разстоянието е: "+ Math.round(result));
+        System.out.format("%.3f", result);
+    }
+}
