@@ -1,0 +1,18 @@
+/*
+3. Направете програма BMI с която да изчислите вашият Body Mass.
+Индексът на телесна маса ( ИТМ ) е стойност, получена от масата ( теглото )
+и височината на човек. BMI се дефинира като телесната маса, разделена на
+квадрата на телесната височина и се изразява в единици kg/m 2 ,
+получена от масата в килограми и височината в метри .
+ */
+
+public class BodyMass {
+
+    public static void main(String[] args) {
+        double weight = 50;
+        double height = 1.70;
+        double bodyMassIndex = weight / (height * height);
+
+        System.out.println("My BMI is ~ " + Math.ceil(bodyMassIndex) + " kg/m2");
+    }
+}
